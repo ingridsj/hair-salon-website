@@ -1,0 +1,175 @@
+@import "../../styles/variables";
+@import "../../styles/_mixins";
+.user-login {
+  display: flex;
+
+  .user-login-left {
+    width: 50%;
+    background: $background-login;
+
+    @include tablet {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      max-height: 99vh;
+      object-fit: cover;
+    }
+  }
+
+  .user-login-right {
+    @include flex-center;
+
+    width: 50%;
+    height: 100vh;
+
+    @include tablet {
+      width: 100%;
+    }
+
+    .user-login-form-wrapper {
+      @include flex-center;
+      align-items: unset;
+      flex-direction: column;
+
+      margin: auto;
+
+      width: 60%;
+
+      .title {
+        @include tablet {
+          @include flex-column;
+        }
+      }
+
+      h1 {
+        @include laptop {
+          font-size: 1.75rem;
+        }
+      }
+
+      p {
+        font-size: 1.25rem;
+
+        @include laptop {
+          font-size: 1.125rem;
+        }
+      }
+
+      h1,
+      p {
+        margin-bottom: 10px;
+      }
+
+      button {
+        width: 100%;
+        padding: 0.625rem;
+
+        font-size: 1.25rem;
+        border-radius: 4px;
+
+        cursor: pointer;
+
+        @include laptop {
+          width: 90%;
+          padding: 0.5rem;
+
+          font-size: 1.125rem;
+        }
+      }
+
+      .user-login-button-app {
+        box-shadow: 0 0 5px $box-gray;
+        background: $text-white;
+        font-weight: 600;
+
+        border: none;
+        margin: 15px auto;
+
+        i {
+          color: #669fab;
+          vertical-align: middle;
+          margin-right: 0.625rem;
+        }
+      }
+
+      .or {
+        text-align: center;
+      }
+
+      form {
+        @include laptop {
+          @include flex-column;
+        }
+
+        .user-login__form-control {
+          @include flex-center;
+          justify-content: initial;
+          background-color: $input-background;
+
+          margin: 10px 0 10px;
+          border-radius: 5px;
+
+          width: 100%;
+
+          @include laptop {
+            width: 90%;
+            margin: 10px auto 10px;
+          }
+
+          svg {
+            color: $icon-gray;
+            margin-left: 10px;
+            font-size: 1.6rem;
+          }
+
+          input {
+            padding: 3px;
+            width: 60%;
+            height: 3rem;
+
+            outline-width: 0;
+
+            border: none;
+            background: none;
+            font-size: 1.1rem;
+            margin-left: 10px;
+          }
+
+          .login-eye {
+            cursor: pointer;
+            margin-left: 1.9rem;
+
+            @include laptop {
+              margin: 1rem;
+            }
+          }
+        }
+
+        span {
+          a {
+            color: $text-gray;
+          }
+        }
+
+        .user-login__submit-button {
+          border: none;
+          border-radius: 8px;
+          background: $button-orange;
+
+          margin: 20px auto 20px;
+
+          color: $text-white;
+          font-weight: 600;
+
+          transition: all 0.2s;
+
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+  }
+}
