@@ -21,3 +21,21 @@
     @content;
   }
 }
+
+@mixin mobileL {
+  @media (max-width: 450px) {
+    @content;
+  }
+}
+
+@mixin mobileM {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin mobileS {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
