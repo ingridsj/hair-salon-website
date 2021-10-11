@@ -1,3 +1,7 @@
+import { Routes } from "./routers/routes";
+
+import "./styles/global.scss";
+
 export function App() {
-  return <div>ola mundo</div>;
+  return <Routes />;
 }
