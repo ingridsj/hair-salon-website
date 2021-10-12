@@ -1,0 +1,18 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.button-logout {
+  @include button-container;
+  @include button-sidebar;
+
+  border: solid 2px $light-green;
+  color: $background-login;
+  background-color: #fff;
+
+  margin-top: 20px;
+
+  &:hover {
+    background-color: #f6c5cb;
+    color: #fff;
+  }
+}
