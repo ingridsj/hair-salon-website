@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.container {
+  display: flex;
+
+  .other-pages {
+    flex: 4;
+
+    background-color: $input-background;
+  }
+}
