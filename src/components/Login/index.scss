@@ -79,13 +79,8 @@
       }
 
       button {
+        @include button-container;
         width: 100%;
-        padding: 0.625rem;
-
-        font-size: 1.25rem;
-        border-radius: 4px;
-
-        cursor: pointer;
 
         @include laptop {
           width: 90%;
