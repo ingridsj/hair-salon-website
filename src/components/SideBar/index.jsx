@@ -57,6 +57,17 @@ export function SideBar() {
             ))}
           </ul>
 
+          <ul className="sidebar-list-top">
+            {menu.map((menuItem) => (
+              <li key={menuItem.name} className="sidebar-list-item">
+                <NavLink to={menuItem.path} className="sidebar-link">
+                  {menuItem.svg}
+                  {menuItem.name}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+
           <ScheduleButton />
           <LogouButton />
         </div>
