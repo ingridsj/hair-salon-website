@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ScheduleButton } from "../../components/ScheduleButton";
 import { user } from "../../utils/user";
 
@@ -14,7 +15,9 @@ export function HistoryPage() {
       </h2>
       <div className="history-message">
         <h1>Você ainda não possui agendamentos</h1>
-        <ScheduleButton />
+        <Link to="/dashboard/new-schedule">
+          <ScheduleButton />
+        </Link>
       </div>
     </div>
   );

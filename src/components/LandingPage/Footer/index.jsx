@@ -3,8 +3,6 @@ import {
   AiFillTwitterSquare,
   AiOutlineInstagram,
 } from "react-icons/ai";
-import { Link } from "react-router-dom";
-import { ScheduleButton } from "../../ScheduleButton";
 
 import "./index.scss";
 
@@ -18,32 +16,32 @@ export function Footer() {
               <span>Alternative HairCuts</span>
             </a>
             <div className="footer-social">
-              <a href="#" className="footer-icon">
+              <a href="https://www.facebook.com/" className="footer-icon">
                 <AiFillFacebook />
               </a>
-              <a href="#" className="footer-icon">
+              <a href="https://twitter.com/" className="footer-icon">
                 <AiFillTwitterSquare />
               </a>
-              <a href="#" className="footer-icon">
+              <a href="https://www.instagram.com/" className="footer-icon">
                 <AiOutlineInstagram />
               </a>
             </div>
           </div>
           <div className="footer-right">
             <div className="footer-links">
-              <a href="#" className="footer-link">
+              <a href="https://www.facebook.com/" className="footer-link">
                 Home
               </a>
-              <a href="#" className="footer-link">
+              <a href="https://www.facebook.com/" className="footer-link">
                 Contato
               </a>
-              <a href="#" className="footer-link">
+              <a href="https://www.facebook.com/" className="footer-link">
                 Blog
               </a>
-              <a href="#" className="footer-link">
+              <a href="https://www.facebook.com/" className="footer-link">
                 Carreira
               </a>
-              <a href="#" className="footer-link">
+              <a href="https://www.facebook.com/" className="footer-link">
                 Suporte
               </a>
             </div>

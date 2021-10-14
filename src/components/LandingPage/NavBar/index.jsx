@@ -1,10 +1,9 @@
 import { useState } from "react";
 
-import { ScheduleButton } from "../../ScheduleButton";
 import { MenuItems } from "./MenuItems";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import { FaTimes, FaBars } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { SignInButton } from "../../SignInButton";
 
 import "./index.scss";

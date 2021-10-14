@@ -1,5 +1,4 @@
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 import { CgProfile } from "react-icons/cg";
 import { GrScheduleNew, GrHistory } from "react-icons/gr";
@@ -57,19 +56,12 @@ export function SideBar() {
             ))}
           </ul>
 
-          <ul className="sidebar-list-top">
-            {menu.map((menuItem) => (
-              <li key={menuItem.name} className="sidebar-list-item">
-                <NavLink to={menuItem.path} className="sidebar-link">
-                  {menuItem.svg}
-                  {menuItem.name}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-
-          <ScheduleButton />
-          <LogouButton />
+          <Link to="/dashboard/new-schedule">
+            <ScheduleButton />
+          </Link>
+          <Link to="/home">
+            <LogouButton />
+          </Link>
         </div>
       </div>
     </div>

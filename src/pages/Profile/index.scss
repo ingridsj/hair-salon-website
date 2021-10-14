@@ -1,4 +1,106 @@
-.profile-container {
-  flex: 4;
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.profile {
+  margin: 20px 20px 0;
+
+  .header-name {
+    margin-bottom: 20px;
+  }
+
+  .profile-content {
+    display: grid;
+    grid-template-columns: repeat(2, 700px);
+
+    .profile-weather {
+      width: 300px;
+      height: 100px;
+
+      padding: 30px;
+      border-radius: 20px;
+      background-color: #fff;
+
+      box-shadow: 2px 2px 5px 2px $box-gray;
+
+      .header-weather {
+        @include flex-center;
+        justify-content: space-between;
+
+        h2 {
+          color: $background-login;
+          font-size: 1rem;
+        }
+        p {
+          font-size: 0.8rem;
+
+          color: $box-gray;
+        }
+      }
+
+      .data-weather {
+        @include flex-center;
+        justify-content: space-between;
+
+        h3 {
+          text-transform: uppercase;
+        }
+
+        span {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .profile-info {
+      background: #fff;
+      border-radius: 8px;
+
+      width: 300px;
+      height: calc(100vh - 100px);
+
+      .profile-info-content {
+        padding: 30px;
+
+        @include flex-column;
+        justify-content: center;
+
+        .profile-info-header {
+          @include flex-column;
+          margin-bottom: 30px;
+
+          img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+          }
+
+          .profile-social-media {
+            color: $dark-pink;
+          }
+        }
+
+        .profile-info-transition {
+          text-align: center;
+        }
+
+        .profile-info-transition {
+          margin-bottom: 20px;
+        }
+      }
+
+      .data-profile {
+        @include flex-center;
+        text-align: center;
+
+        .data-profile-items {
+          margin-left: 10px;
+
+          span {
+            font-size: 2rem;
+            color: $background-login;
+          }
+        }
+      }
+    }
+  }
 }
- 
