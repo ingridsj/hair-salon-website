@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# :sparkles: Frontend Challenge - Alternative HairCuts Scheduling
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
 
-## Available Scripts
+Este projeto foi desenvolvido para candidatura à uma vaga de desenvolvedor Front-End Júnior. A aplicação deveria ser feita com a utilização de frameworks Front-End. Não foi requisitado backend. Realizado em 5 dias, você pode checar o resultado em minha prévia online, deploy feito pelo Vercel https://alternativehaircuts.vercel.app/home
 
-In the project directory, you can run:
+## :boom: Tecnologias utilizadas
 
-### `yarn start`
+- ReactJS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- JavaScript
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- SCSS
 
-### `yarn test`
+- HTML5
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Axios
 
-### `yarn build`
+- React Router Dom
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Fullcallendar
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React Icons
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- JS Cookie
 
-### `yarn eject`
+## 🧙‍♂️ Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Para rodar essa aplicação em sua máquina, você precisa ter uma IDE instalada. Recomendo particularmente o VSCode, com a extensão Live Sass para compilação dos arquivos .scss. Com a IDE instalada e preparada, em seu terminal, execute:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```shell
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+npm install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
 
-## Learn More
+Por padrão, essa aplicação é rodada na porta 3000 em sua máquina local. Para isso, execute o comando:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```shell
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm start
 
-### Code Splitting
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Após a execução do comando, a seguinte porta abrirá em seu browser:
 
-### Analyzing the Bundle Size
+```shell
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+localhost:3000
 
-### Making a Progressive Web App
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Pronto! Você conseguiu rodar a aplicação.
 
-### Advanced Configuration
+## :fire: Task list
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [x] Utilização de um framework Front-End - ReactJS
 
-### Deployment
+- [x] Uma página de Login
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [x] Uma página de usuário
 
-### `yarn build` fails to minify
+- [x] Uma página agendamento
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [ ] Responsividade/compatibilidade com diversos dispositivos
+
+#### Adicionais
+
+- [x] Integração com API
