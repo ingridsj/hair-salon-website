@@ -1,25 +1,10 @@
 import { Component } from "react";
-
 import FullCalendar from "@fullcalendar/react";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 
 let eventGuid = 0;
-let todayStr = new Date().toISOString().replace(/T.*$/, ""); // YYYY-MM-DD of today
-
-export const INITIAL_EVENTS = [
-  {
-    id: createEventId(),
-    title: "All-day event",
-    start: todayStr,
-  },
-  {
-    id: createEventId(),
-    title: "Timed event",
-    start: todayStr + "T12:00:00",
-  },
-];
 
 export function createEventId() {
   return String(eventGuid++);
@@ -48,16 +33,10 @@ export default class Calendar extends Component {
             selectMirror={true}
             dayMaxEvents={true}
             weekends={this.state.weekendsVisible}
-            initialEvents={INITIAL_EVENTS} // alternatively, use the `events` setting to fetch from a feed
             select={this.handleDateSelect}
-            eventContent={renderEventContent} // custom render function
+            eventContent={renderEventContent}
             eventClick={this.handleEventClick}
-            eventsSet={this.handleEvents} // called after events are initialized/added/changed/removed
-            /* you can update a remote database when these fire:
-            eventAdd={function(){}}
-            eventChange={function(){}}
-            eventRemove={function(){}}
-            */
+            eventsSet={this.handleEvents}
           />
         </div>
       </div>
@@ -71,7 +50,7 @@ export default class Calendar extends Component {
   };
 
   handleDateSelect = (selectInfo) => {
-    let title = prompt("Please enter a new title for your event");
+    let title = prompt("Qual dia você quer agendar?");
     let calendarApi = selectInfo.view.calendar;
 
     calendarApi.unselect(); // clear date selection
@@ -94,11 +73,11 @@ export default class Calendar extends Component {
   };
 }
 
-function renderEventContent(eventInfo) {
+const renderEventContent = (eventInfo) => {
   return (
     <>
       <b>{eventInfo.timeText}</b>
       <i>{eventInfo.event.title}</i>
     </>
   );
-}
+};
