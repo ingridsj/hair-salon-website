@@ -1,3 +1,5 @@
+import Calendar from "../../components/Calendar";
+
 export function NewSchedule() {
-  return "agendar uma nova data";
+  return <Calendar />;
 }
