@@ -17,6 +17,10 @@
     max-width: 1140px;
     margin: auto;
 
+    @include mobileL {
+      width: 80%;
+    }
+
     .footer-left {
       flex: 50%;
 
@@ -37,6 +41,10 @@
 
         justify-content: center;
         margin-bottom: 2em;
+
+        @include mobileL {
+          grid-template-columns: repeat(3, 10px);
+        }
 
         .footer-icon {
           width: 25px;
@@ -63,12 +71,20 @@
         grid-auto-flow: column;
         justify-items: start;
 
+        @include mobileL {
+          grid-template-columns: 100px 120px;
+
+          @include flex-column;
+        }
+
         .footer-link {
           color: $text-white;
           font-size: 1rem;
           font-weight: 400;
           text-decoration: none;
           margin-bottom: 0.6em;
+
+          margin: 0 5px;
         }
       }
       .footer-copyright {

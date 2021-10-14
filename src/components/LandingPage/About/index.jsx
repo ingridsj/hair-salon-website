@@ -2,6 +2,7 @@ import "./index.scss";
 
 import { backgroundimage } from "../../../assets/images/index";
 import { ScheduleButton } from "../../../components/ScheduleButton";
+import { Link } from "react-router-dom";
 
 export function About() {
   return (
@@ -18,7 +19,9 @@ export function About() {
           beatae alias expedita culpa, id possimus nostrum quos accusantium
           quaerat, laboriosam aliquid?
         </p>
-        <ScheduleButton />
+        <Link to="./login">
+          <ScheduleButton />
+        </Link>
       </div>
     </div>
   );

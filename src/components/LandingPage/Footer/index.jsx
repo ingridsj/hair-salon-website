@@ -32,22 +32,19 @@ export function Footer() {
           <div className="footer-right">
             <div className="footer-links">
               <a href="#" className="footer-link">
-                About Us
+                Home
               </a>
               <a href="#" className="footer-link">
-                Contact
+                Contato
               </a>
               <a href="#" className="footer-link">
                 Blog
               </a>
               <a href="#" className="footer-link">
-                Careers
+                Carreira
               </a>
               <a href="#" className="footer-link">
-                Support
-              </a>
-              <a href="#" className="footer-link">
-                Privacy Policy
+                Suporte
               </a>
             </div>
             <p className="footer-copyright">
