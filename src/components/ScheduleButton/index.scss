@@ -6,4 +6,11 @@
   @include button-sidebar;
 
   background-color: $dark-pink;
+
+  @include mobileL {
+    width: 140px;
+  }
+
+  @include mobileS {
+  }
 }

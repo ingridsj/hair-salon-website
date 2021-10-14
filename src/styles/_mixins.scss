@@ -49,8 +49,20 @@
   }
 }
 
+@mixin tablet970 {
+  @media (max-width: 970px) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (max-width: 890px) {
+    @content;
+  }
+}
+
+@mixin tablet540 {
+  @media (max-width: 540px) {
     @content;
   }
 }

@@ -1,0 +1,22 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.user-login__submit-button {
+  @include button-container;
+
+  border: none;
+  border-radius: 8px;
+  background: $button-orange;
+
+  margin: 20px auto 20px;
+
+  text-transform: uppercase;
+  color: $text-white;
+  font-weight: 600;
+
+  transition: all 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

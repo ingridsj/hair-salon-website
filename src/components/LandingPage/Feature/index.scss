@@ -1,0 +1,45 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.why-alternative {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 4rem auto 0px;
+
+  .why-alternative-title {
+    font-size: 2rem;
+
+    text-align: center;
+  }
+
+  .why-alternative-description {
+    font-size: 1.2rem;
+
+    @include mobileL {
+      font-size: 1rem;
+      text-align: justify;
+    }
+  }
+
+  .why-container {
+    width: 70vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    place-items: center;
+
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include mobileL {
+      grid-template-columns: 1fr;
+    }
+  }
+}

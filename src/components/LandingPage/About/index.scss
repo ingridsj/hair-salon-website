@@ -1,0 +1,63 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.about {
+  margin-top: 100px;
+  width: 100%;
+  height: 120vh;
+  background-color: #f3fdff;
+  box-sizing: border-box;
+
+  padding: 50px 5% 0px 5%;
+  position: relative;
+
+  @include flex-center;
+
+  @include mobileL {
+    display: block;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 60%;
+
+    img {
+      width: 500px;
+      height: 500px;
+
+      @include tablet {
+        width: 350px;
+        height: 350px;
+      }
+
+      @include mobileL {
+        display: none;
+      }
+    }
+  }
+
+  .about-text {
+    width: 40%;
+
+    list-style: circle;
+
+    h2 {
+      font-size: 2rem;
+      color: $background-login;
+      font-weight: 500;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    p {
+      width: 100%;
+      text-align: justify;
+      font-size: 1.2rem;
+      color: $text-gray;
+    }
+
+    @include mobileL {
+      width: 100%;
+    }
+  }
+}

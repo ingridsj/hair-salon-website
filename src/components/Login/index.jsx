@@ -10,6 +10,7 @@ import { FcGoogle } from "react-icons/fc";
 import background from "../../assets/background-login.png";
 
 import "./index.scss";
+import { SignInButton } from "../SignInButton";
 
 function initialState() {
   return { user: "", password: "" };
@@ -123,13 +124,7 @@ export function Login() {
               <a href="/">Esqueceu a sua senha?</a>
             </span>
 
-            <button
-              type="submit"
-              className="user-login__submit-button"
-              rounded="true"
-            >
-              Entrar
-            </button>
+            <SignInButton />
             <span>
               Não tem uma conta? <a href="/">Cadastrar</a>
             </span>
