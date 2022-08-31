@@ -11,7 +11,7 @@ import { NewSchedule } from "../pages/NewSchedule";
 import { StoreProvider } from "../hooks/useStore";
 import { Content } from "../pages/Content";
 import RouteWithSubRoutes from "../utils/RouteWithSubRoutes";
-import { ClientHelp } from "../pages/ClientHelp";
+import { ClientHelp } from "../pages/ClientHelp"
 
 export const routes = [
   {
